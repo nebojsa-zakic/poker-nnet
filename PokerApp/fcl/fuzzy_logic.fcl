@@ -1,0 +1,66 @@
+FUNCTION_BLOCK decision
+
+	VAR_INPUT
+		money: REAL;
+		certainty:REAL;
+                aggression:REAL;
+	END_VAR
+	
+	VAR_OUTPUT
+                decision:REAL;
+	END_VAR
+	
+        FUZZIFY money
+		TERM low := (200,1)(400,0);
+		TERM medium :=(300,0)(500,1)(800, 0);
+                TERM high := (800, 0)(1000, 1)(1500, 0);
+                TERM full := (1200, 0)(2000, 1);
+	END_FUZZIFY
+
+	FUZZIFY certainty
+		TERM uncertain := (0,1)(60,0);
+		TERM somewhat :=(35,0)(40,1)(65, 0);
+                TERM certain := (35, 0)(75, 1)(80, 0);
+                TERM complete := (80, 0)(100, 1);
+	END_FUZZIFY
+	
+        FUZZIFY aggression
+		TERM passive := (0,1)(33,0);
+		TERM defensive :=(25,0)(40,1)(55, 0);
+                TERM normal := (35, 0)(50, 1)(65, 0);
+                TERM offensive := (60, 0)(70, 1)(80, 0);
+                TERM aggressive := (80, 0)(100, 1);
+	END_FUZZIFY
+
+        DEFUZZIFY decision
+		TERM uncertain := (0,1)(60,0);
+		TERM somewhat :=(35,0)(40,1)(65, 0);
+                TERM certain := (35, 0)(75, 1)(80, 0);
+                TERM complete := (80, 0)(100, 1);
+
+		METHOD: COG;
+		
+		DEFAULT:=0;
+	END_DEFUZZIFY
+	
+	RULEBLOCK rules
+	
+		AND:MIN;
+		ACT: MIN;
+		ACCU:MAX;
+		
+                RULE 1: IF certainty IS complete AND aggression IS aggressive
+			THEN decision IS complete; 
+                RULE 2: IF certainty IS complete AND aggression IS aggressive
+                        THEN decision IS certain; 
+                RULE 3: IF certainty IS somewhat AND aggression IS aggressive
+                        THEN decision IS certain; 
+                RULE 4: IF certainty IS certain AND aggression IS passive
+			THEN decision IS certain; 
+                RULE 5: IF certainty IS somewhat AND aggression IS defensive
+			THEN decision IS somewhat;
+
+	
+	END_RULEBLOCK
+	
+END_FUNCTION_BLOCK

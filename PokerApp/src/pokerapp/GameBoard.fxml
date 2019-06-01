@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #060;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokerapp.GameBoardController">
+   <children>
+      <GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="768.0" prefWidth="1358.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="217.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="312.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="250.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="248.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="198.0" prefWidth="671.0" spacing="10.0" style="-fx-border-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <VBox prefHeight="188.0" prefWidth="116.0" spacing="25.0">
+                     <children>
+                        <Label fx:id="Player2_Name" text="Player_Name" textFill="#fffb00">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Player2_Money" text="Player_Money" textFill="#fffc00">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label fx:id="Player2_Bet" text="Player_Bet" textFill="#f7ff00">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="p2c1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="p2c2" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Rectangle arcHeight="5.0" arcWidth="1.0" fill="WHITE" height="198.0" stroke="WHITE" strokeType="INSIDE" width="1.0" HBox.hgrow="ALWAYS" />
+                  <VBox prefHeight="188.0" prefWidth="116.0" spacing="25.0">
+                     <children>
+                        <Label fx:id="Player5_Name" text="Player_Name" textFill="#fffb00">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Player5_Money" text="Player_Money" textFill="#fffc00">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Player5_Bet" text="Player_Bet" textFill="#f7ff00">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button fx:id="p5c1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="p5c2" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox prefHeight="79.0" prefWidth="808.0" spacing="10.0" style="-fx-border-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <VBox prefHeight="101.0" prefWidth="120.0" spacing="25.0">
+                     <children>
+                        <Label fx:id="Player1_Bet" text="Player_Bet" textFill="#efff00">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label fx:id="Player1_Money" text="Player_Money" textFill="#e1ff00">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font></Label>
+                        <Label fx:id="Player1_Name" text="Player_Name" textFill="#ddff00">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="p1c1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="p1c2" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" top="1.0" />
+                     </padding>
+                  </Button>
+                  <VBox alignment="TOP_CENTER" prefHeight="188.0" prefWidth="184.0">
+                     <children>
+                        <Label text="Ulog na terenu:" textFill="#e5ff00">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Pot_Value" text="0" textFill="#f2ff00">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="999999.0" prefHeight="117.0" prefWidth="259.0" spacing="70.0" style="-fx-background-color: #303066;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="bCard1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="bCard2" alignment="TOP_LEFT" contentDisplay="TOP" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="bCard3" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="bCard4" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="bCard5" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="188.0" prefWidth="347.0" spacing="15.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="next" mnemonicParsing="false" onAction="#openNext" prefHeight="25.0" prefWidth="200.0" text="Deli" />
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="300.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="Player1_Bet_Input" alignment="CENTER" disable="true" prefHeight="25.0" prefWidth="95.0" promptText="Iznos" text="0" />
+                        <Button fx:id="Raise_Button" disable="true" mnemonicParsing="false" onAction="#playerRaise" prefHeight="25.0" prefWidth="95.0" text="Podigni" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="Fold_Button" disable="true" mnemonicParsing="false" onAction="#playerFold" prefHeight="25.0" prefWidth="200.0" text="Odustani" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <HBox prefHeight="173.0" prefWidth="300.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="p3c1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="p3c2" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="Player3_Name" text="Player_Name" textFill="#ddff00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="Player3_Money" text="Player_Money" textFill="#fffc00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="Player3_Bet" text="Player_Bet" textFill="#f7ff00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="368.0" prefWidth="293.0" style="-fx-border-color: white;" GridPane.rowIndex="2">
+               <children>
+                  <HBox prefHeight="173.0" prefWidth="300.0" spacing="15.0">
+                     <children>
+                        <Button fx:id="p4c1" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="p4c2" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-color: white;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" top="1.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="Player4_Name" text="Player_Name" textFill="#ddff00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="Player4_Money" text="Player_Money" textFill="#fffc00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="Player4_Bet" text="Player_Bet" textFill="#f7ff00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="57.0" prefWidth="71.0" text="Izlaz" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Button mnemonicParsing="false" onAction="#reset" prefHeight="57.0" prefWidth="71.0" text="Restart" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label fx:id="Action" textFill="#ddff00" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

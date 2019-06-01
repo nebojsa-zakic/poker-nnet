@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/game/Player.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/fuzzy/FuzzyDecider.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/pokerapp/PokerApp.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/pokerapp/CreditController.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/pokerapp/GameBoardController.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/game/PlayerDecision.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/nnet/HandNormalizer.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/pokerapp/PlayerUI.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/fcl/fuzzy_logic.fcl</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/game/Table.java</file>
+            <file>file:/C:/Users/user777/Documents/PokerApp/src/nnet/NNetwork.java</file>
+        </group>
+    </open-files>
+</project-private>
