@@ -13,7 +13,7 @@ import org.neuroph.nnet.learning.MomentumBackpropagation;
 import org.neuroph.util.TransferFunctionType;
 
 public class NNetwork {
-	public static final String NNET_LOCATION = "C:\\Users\\user777\\Desktop\\poker.nnet";
+	public static final String NNET_LOCATION = "poker.nnet";
 	static Scanner in;
 	
 	static NeuralNetwork<BackPropagation> neuralNetwork;
