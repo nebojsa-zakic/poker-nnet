@@ -81,7 +81,7 @@ public class GameBoardController implements Initializable {
     Table table;
     
     Player player1 = new Player("Nebojsa", 1000, true);
-    Player player2 = new Player("Mrx", 1000, false);
+    Player player2 = new Player("Marko", 1000, false);
     Player player3 = new Player("Nikola", 1000, false);
     Player player4 = new Player("Jovan", 1000, false);
     Player player5 = new Player("Milovan", 1000, false);
